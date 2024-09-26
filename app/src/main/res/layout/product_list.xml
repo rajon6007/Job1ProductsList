@@ -27,9 +27,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="8dp"
-            android:text="Name"
-            android:textSize="20sp"
+            android:text="Title"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/productImage"
@@ -41,13 +40,36 @@
             android:layout_height="wrap_content"
             android:text="$"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="30dp"
-            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/productImage"
             app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+        <TextView
+            android:id="@+id/Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:text="1"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toBottomOf="@+id/priceTxt" />
+
+        <TextView
+            android:id="@+id/desId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toBottomOf="@+id/Id" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,10 +16,15 @@ class ProductAdapter(private val products:List<Product>):RecyclerView.Adapter<Pr
         val productImg = iteView.findViewById<ImageView>(R.id.productImage)
         val productName = iteView.findViewById<TextView>(R.id.nameTxt)
         val productPrice = iteView.findViewById<TextView>(R.id.priceTxt)
+        val productId=iteView.findViewById<TextView>(R.id.Id)
+        val productDesc=iteView.findViewById<TextView>(R.id.desId)
 
         fun bind(product: Product){
             productName.text = product.title
             productPrice.text = "$${product.price}"
+            productId.text= product.id.toString()
+            productDesc.text = product.description
+
             Glide.with(itemView).load(product.images[0])
                 .into(productImg)
         }
